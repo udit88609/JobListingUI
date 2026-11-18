@@ -8,8 +8,8 @@ function Card(props){
             <div className="card">
      <div className="top">
      <img
-  src="https://imgs.search.brave.com/8KgsRJzLVNqFn5YGp7ZkB16L1Znegr72N45yDZpUzKg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAyLzk0LzU0LzA3/LzM2MF9GXzI5NDU0/MDcyMl9WSXdTV3ly/VTZxNzgxU2tIV1Ns/elVEWGpmb3VSbGo0/Ny5qcGc"
-  alt="Amazon logo"
+  src={props.brandlogo}
+  alt=""
 />
       <button>save <Bookmark size={12} /></button>
       </div>
@@ -27,7 +27,9 @@ function Card(props){
       <div> 
          
           <h1> {props.pay}</h1>
-          <p> Mumbaii,India</p>
+          <p> {props.location}
+            
+          </p>
         </div>
       
       <div >

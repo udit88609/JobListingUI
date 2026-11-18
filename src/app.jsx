@@ -2,6 +2,8 @@ import Card from './component/card.jsx';
 
 
 function App() {
+
+  
 const jobOpenings = [
   {
     brandLogo: "https://cdn.simpleicons.org/google",
@@ -14,7 +16,7 @@ const jobOpenings = [
     location: "Bangalore, India"
   },
   {
-    brandLogo: "https://cdn.simpleicons.org/microsoft",
+    brandLogo: "https://imgs.search.brave.com/RJS2ALGdSuU6LD1niSWvknHpaHbFuyoXyt-1eNitlVo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMudHVyYm9sb2dv/LmNvbS9ibG9nL2Vu/LzIwMTkvMDgvMTkw/ODUwMjMvbWljcm9z/b2Z0LWxvZ28tMjAx/Mi5wbmc",
     name: "Microsoft",
     datePosted: "10 days ago",
     post: "Software Engineer",
@@ -24,7 +26,7 @@ const jobOpenings = [
     location: "Hyderabad, India"
   },
   {
-    brandLogo: "https://cdn.simpleicons.org/amazon",
+    brandLogo: "https://imgs.search.brave.com/kjAbMXJ5x9hzQWtuGKZE9T2TjFs-vQ3011HXJduDVog/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly8xMDAw/bG9nb3MubmV0L3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE2LzEw/L0FtYXpvbi1sb2dv/LW1lYW5pbmctNTAw/eDI1MC5qcGc",
     name: "Amazon",
     datePosted: "2 days ago",
     post: "UI/UX Designer",
@@ -74,7 +76,7 @@ const jobOpenings = [
     location: "Pune, India"
   },
   {
-    brandLogo: "https://cdn.simpleicons.org/adobe",
+    brandLogo: "https://imgs.search.brave.com/HtWDOWTvB4NaVGgAGVUo583pYohTe9kSNXgo1HDSwPQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9sb2dv/d2lrLmNvbS9jb250/ZW50L3VwbG9hZHMv/aW1hZ2VzL2Fkb2Jl/NzgxLmxvZ293aWsu/Y29tLndlYnA",
     name: "Adobe",
     datePosted: "4 days ago",
     post: "Web Developer",
@@ -84,7 +86,7 @@ const jobOpenings = [
     location: "Noida, India"
   },
   {
-    brandLogo: "https://cdn.simpleicons.org/ibm",
+    brandLogo: "https://imgs.search.brave.com/pQVL0GlGfuLHTLPGfnvc4tP1jKHdjJNGSdQNoPotL00/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly8xMDAw/bG9nb3MubmV0L3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE3LzAy/L0lCTS1Mb2dvLTE5/NTYtNTAweDI4MS5q/cGc",
     name: "IBM",
     datePosted: "10 weeks ago",
     post: "Cloud Engineer",
@@ -104,6 +106,7 @@ const jobOpenings = [
     location: "Chennai, India"
   }
 ];
+
    console.log(jobOpenings);
   return (
     <div className="parent">
@@ -113,8 +116,9 @@ const jobOpenings = [
                 tag1={elem.tag1}
                 tag2={elem.tag2}
                 pay={elem.pay}
-                barndlogo={elem.brandLogo}
-                datePosted={elem.datePosted}/>
+                brandlogo={elem.brandLogo}
+                datePosted={elem.datePosted}
+                location={elem.location}/>
 
 
       })}
